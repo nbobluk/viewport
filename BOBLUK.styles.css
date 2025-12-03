@@ -120,7 +120,7 @@ img{
 /* ----- ANIMATED ICON ----- */
 /* Icon and animation code from https://typogram.github.io/Anicons/ */
 .icon{
-    font-family: "Anicons Regular";
+    font-family: "Anicons Regular", sans-serif;
     font-size: 2em;
     display: inline-block;
     margin: 0 0.5em;
@@ -151,14 +151,13 @@ footer .icon{
     .icon {
         animation: none !important;
     }
-}
-
     @-webkit-keyframes icon-animation {
         0% { font-variation-settings: "TIME" 1; }
     }
     @keyframes icon-animation {
         0% { font-variation-settings: "TIME" 1; }
     }
+}
 /* --------------- END USER PREFERS REDUCED MOTION QUERY --------------- */
 
 
@@ -320,10 +319,12 @@ img{
 
 /* ---------- ADJUSTING RESPONSIVE IMAGE SIZE ---------- */
 /* --------------- BEGIN RESPONSIVE IMAGE ADJUST SIZES --------------- */
+@media (min-width: 1024px){
     img{
         width: 300px;
         max-width: 300px;
     } 
+}
 /* --------------- END RESPONSIVE IMAGE ADJUST SIZES --------------- */
 
 
